@@ -1,0 +1,14 @@
+ogólnie to bierzesz sobie liczbê sprzed T i to jest a
+
+to przez co dzieli siê n to jest b
+
+liczysz sobie log_b(a)
+
+i porównujsz n^ten logarytm do n który jest po plusie we wzorze
+
+jeœli f(n) jest wiêkszy to T(n) = O-(f(n))
+
+jeœli n^logcoœtam jest wiêksze to T(n) = O-(n^logcoœtam)
+
+jeœli s¹ równe to T(n) = O-(n^logcoœtam * n * logn)
+

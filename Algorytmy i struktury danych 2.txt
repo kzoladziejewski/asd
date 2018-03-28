@@ -1,0 +1,292 @@
+[1][2][3][4][5][6][7][][][][] - zwykla tablica
+INSERT, FIND DELETE
+FIND
+I np chcemy sprawdzic czy 18 jest w tablicy.
+
+find(t,n,x) - tablica, rozmiar, co szukamy
+if x in t 
+	n mozliwosci gdzie on jest
+	jaki jest sredni czas jesli po kolei? 
+	E(T(n)) - wartosc oczekiwania
+	Suma od i do n = p(i)*T 
+	1/n * (n(n+1)/2 = (n+1)/2
+	Mozna wyliczyc wariancje
+if x not in t
+	n - porÛwnaÒ
+	
+
+O(n)
+gdyby by≥a posortowana to mozna by≥o uzyc bisekcji 
+O((log2)n)
+jest bardzo szybko i jest mala wariancja
+
+
+Ogolnie nie trzeba uzywac wskaznikow, jest bardzo szybkie
+
+INSERT
+double [1000] - rozmiar logicznny
+int n [50] - rozmiar ile danych
+
+wrzucamy nowa wartosc t[n++] = 7
+ale tylko do 1000.
+
+	    |FIND | INSERT |
+tab[niesort]| O(n)| O(1)   |
+tab[sorted] |log(n)|O(n)   |
+lista	    |O(n)  | On(n) |
+BST	    |	   |	   |
+
+
+BST - binary search t*
+
+Kaødy element ma dwÛjke wskaünikÛw - prawy i lewy wskaznik
+	[7]
+ x<7		x>7
+ [] 		[]
+Przez wskaünik jest wrzucane,
+Jest podobne do bisekscji
+
+n = (3/2)k
+Bardzo czÍsto moøna zastowaÊ strukturÍ drzewa bez specjalnych nawet ceregieli by drzewo bylo zrownowazone otrzymujemy bardzo dobry algorytm
+
+WSKAèNIK:
+
+template <class T>
+struct node
+{
+double; 
+nodu* left
+node* right
+node(,double, x0, node* l, node * r): x(x0), left(l) right(r) - konstruktor, nie zajmuje on miejsca w pamieci, te 3  wyzej tak
+{}
+};
+
+(w javie bez wskaznika, kazdy obiekt jest refencja na obiekt, nie mozna zwalniac pamieci)
+
+
+Robimy drzewo:
+node(t *NULL)
+wskaznik na nie istniejacy element
+node(new t double (5)) - PRZYDZIELI sie pamiec, potem da double na 5 i left i right NULL 
+
+Jak wstawic do tego 6?
+Tak wyglada drzewo
+	[5]
+      [0]  [0]
+     [4]     [6]
+
+
+t - > right = new node(6)
+t -> left = new node(4
+
+ale najpierw trzeba znalezc ta 5 w drzewie, nie szuka klucza tylko adres klucza gdzie on jest
+
+node * find(node x t,  int y ) - podajemy drzewo i jaki klucz mamy znalezc
+{
+if ( 0 == t || t->x == y) // kolejnosc jest wazna bo najpierw sprawdzamy czy 0==t i jesli jest prawda to to 2 nie wykona sie
+return t; 
+if (y > t-> x)
+return find(t-> right, y)
+else(
+}
+
+
+mozna zamienic na
+
+node * find(node x t,  int y ) 
+{
+while ( t && t -> x!=y)
+if (y>t->x)
+t=t->right
+if(y < t->x)
+t=t->left
+
+Wk≥adamy zawsze przydzielajac nowa pamiec. Nowo tworzony element jest azywany lisciem.
+
+	 [12]
+      [8]   [16]
+    [5] [9][14][20]
+
+I jeúli chce wstawiÊ do tego drzewa 19.
+to ide do 12, potem do 16, potem do 20
+
+funkcja insert
+void (insert(node * t, int x)
+{
+if(t)
+{ t = new node(x);
+}
+else
+{
+if(x<t->x)
+{
+insert(t->left.x);
+else{
+inser(t-> right.x);
+}
+}
+}
+}
+
+
+DELETE
+void release(node x t) 
+{
+t = NULL; //mozna zrobic w javie ale to nie zwalnia pamieci
+//w c++ robimy to tak:
+if( t != NULL) //wiemy ze istnieje cos co ma,
+{ release(t->left);
+release(t->right);
+delete t;}
+//DZIALA DLA ZR”WNOWAZONYCH DRZEW! 
+}
+
+jak usunac 18 z:
+	 [8]
+       [3]   [10]
+      [1][5][13][18]
+
+jesli nie ma dzieci to po prostu zerujesz prawy wskaznik 10 na NULL.
+Ale jesli chce usunac 10 to musze usunac 10 (18 juz byla usunieta) i zamieniam wskaznikami z 13.
+
+ale jeúli mam
+
+	  [8]
+      [3]   	[10]
+    [1]  [5]   [13] [18]
+  [0][2][4][6]
+
+
+i chce usunac 5	to musze wypisac wszystkie elementy klucza ktory chce usunac najpierw mniejsza a potem wieksze
+(
+inorder(mpte *t){
+if(t)
+{
+inorder(t->left);
+cout << t;
+inorder(t->right);
+}}
+
+void inorder(node * t, void f(node *))
+{
+{if(t)
+{orfer(t->let,f);
+f(t);
+inordeR(t->right, f);
+
+class Dict
+{
+private:
+node * t;
+public:
+
+}}
+//NIE OGARNALEM DALEJ - 9:40-9:50
+
+
+LISTA 1 POPRAWNIE ROZWIAZANA:
+Zad 1:
+//TARAS CODE - REKURENCJA
+template <typaneme T0, typename T1>
+auto inline (T0 constx, T1 constx)
+->decltype(x*n)
+{
+using value_type = decltype(x*n);
+if (!n)
+	return 1;
+dec_type temp=Rpow(x,n/2);
+if(fmod(n,2)
+	return temp*temp;
+return n>0? x*temp*temp:
+(temp*temp)/x;
+
+	
+
+//PAWE£ OLSZOWY - CODE - BEZ REKURENCJA
+int iter(int x, int n)
+{
+int result = 1;
+while(n>0)
+{
+if(n%2==00)
+{
+n/=2;
+x *= x;
+}
+else
+{
+n-=1;
+result *=x;
+n/2;
+x*x;}
+return x;
+
+DZIALA TYLKO DLA N DODATNICH.
+kod laskosia:
+int result = 1;
+while(n>0)
+{
+if (n%2 != 0)
+{
+result*=x;
+n/2=2;
+x*=x;}
+}
+}
+
+
+Zad 2 - W•S
+double m_zero(double f(double), double a, double b)
+{
+double fa= f(a);
+double fb= f(b);
+double x0 = (a+b)/2;;
+if(a*fb>0) throw ("error")
+while(x0 != a and x0 != b)
+{
+x0 = (a+b)/2;
+double f0 = f(x0);
+
+if(abs(f0) < DBL_EPSILON)
+{
+break;
+}
+
+//DALEJ SA WARUNKI SMIECIOWE
+}
+}
+
+
+Zad 3 - LUCAS
+double oblicz(double a [], int n, double x)
+double wynik = a[n];
+while(n)
+{
+wynik= wynik*x+a(--n);
+return wynik;
+
+Zad 4 - LASKOS:
+Suma k od i=0 = (n nad i ) p^i * q^(n-1) = q^n suma k od i ( n nad i) * (p/g)^1i
+
+i = 0 = 1*1
+i = 1 = n/1 * p/q
+i = 2 = n/1 * (n-i)/2 * (p/q) * (p/q)
+
+Sj+1 = Sj * ((n-j)/(j+1)) * p/q
+
+
+double P(int k, int n, double p)
+{
+double q = (1-p);
+double  p_q = p/g;
+double skladnik = pow(q,n); 
+double suma = 0;
+int i; 
+for (i =0; i<=k; i++
+{
+}
+DALEJ W VISUALU MAM
+}
+
+
+co znaczy aprery?

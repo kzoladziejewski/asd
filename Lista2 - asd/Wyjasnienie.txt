@@ -1,0 +1,4 @@
+Zadanie 4:
+a) O ile zrozumia³em skrypt ma siê odpaliæ dopiero wtedy kiedy zostanie sprawdzone czy i n i k s¹ wzglêdem siebie pierwsze wiêc dlatego wjeba³em tam euklidesa.
+
+NIE WIEM CZY JEST OK

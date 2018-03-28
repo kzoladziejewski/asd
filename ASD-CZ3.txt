@@ -1,0 +1,39 @@
+SORTOWANIE
+
+Sortowanie przez wstawianie.
+Mamy tablice:
+8,7,5,3,4,12,5
+
+Bierzesz liczbe, i ja wsadasz w odpowiednie miejsce np.
+
+1. 8
+2. 7 <8
+3. 5 < 7 <8
+
+Sprawdzasz po kolei jak idzie.
+
+void sort(double t<j)
+{
+for int i =1; i < n; i++
+insert(t,i,t[i];
+}
+void insert(double  n, int n, double t[]
+{
+while (i && t[i-1[]>x)
+
+t[i] = t[i-1]s
+i--}
+} t[i] = x;
+
+
+
+
+wynikiem sortowania mozna miec:
+sort(t,n) -> n!
+po przesortyowaniu moze wyjsc dowolna permutacja
+
+
+algorytm
+keepsort
+marchsort
+k = sqrt(log2(n!) = O(nlonn)

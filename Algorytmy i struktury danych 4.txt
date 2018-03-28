@@ -1,0 +1,10 @@
+BIG SORT I sortowanie w czasie liniowym
+
+QUICK SORT
+
+void quick_sort(T+[], int n)
+if n > 1{
+int k = partition(t,n)
+quick_sort(t,k)
+quick_sort(t+k, n-k);x
+}

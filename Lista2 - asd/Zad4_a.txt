@@ -1,0 +1,18 @@
+Zad 4 a:
+n = 6
+k = 3
+NWD = 3
+przesuniecie [1][2] [1][2] [1][2]
+			    \  /
+			      T
+
+przesuwam 1 o 2, oprocz T, go daje na ostatnie miejsce
+
+jesli liczby s¹ wzglednie pierwsze!
+
+tmp = a[0];
+for(j=0; j < nwd(k,n), j++)
+for(i=0; i<n; i++_
+a[i*k%n] = a[(i+1)xk)%n];
+a[((n-1)*k)%n] = tmp;
+ 

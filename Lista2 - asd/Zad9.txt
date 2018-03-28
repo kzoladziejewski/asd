@@ -1,0 +1,17 @@
+Mo¿e mieæ maksymalnie:
+(2^h)-1
+
+np:
+       o
+     o | o
+o | o || o | o 
+
+
+
+G³êbokoœæ - 3
+Iloœæ wêz³ów - 7
+
+Chyba ¿e nie liczysz korzenia to wtedy:
+2^(h+1) - 1
+
+

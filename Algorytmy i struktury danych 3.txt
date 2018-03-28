@@ -1,0 +1,106 @@
+Wprowadzenie do algorytmów - Cormen, Leiserson, Rivest 
+LEKTORIUM
+
+
+
+DZIEL I ZWYCIÊ¯AJ
+Przyk³adem tego jest bisekcja:
+Bisekcje - template
+
+templek <class T>
+T* costam(T t[], int n, T x)
+{
+while(n>1)
+{ if (x < t(n/))
+n=n/2
+else
+T +=n/2;
+n-n/2;
+
+
+Dziel i zwyciezaj ma 3 fazy:
+1. Podziel problem - np wykonaj znalezienei elementu œrodkowego - czyli podziel na podproblemy
+2. Rekurencyjnie dla podproblemów zrób porównanie.
+(rekursja dla podproblemów)
+3. Po³¹cz rozwi¹zania podproblemów.
+
+Merge.
+
+template <class T>
+void merge_sort(T t[], int n)
+{
+if (n == 1) return;
+merge_sort(t, n/2);
+merge_sort(t+n/2, n-n/2);
+merge(t, n/2, n);
+}
+
+Wad¹ algorytmu jest to ¿e wymaga dodatkowe pamiêci.
+
+merge(t, n/2,n);
+i =0;
+k = 0;
+j = n/2
+while(i<n/2 i j < n)
+if(t[i] < t[j])
+{t[k++] = t[i++];
+}
+
+Ocena z³o¿onoœc tego cholerdtwa ^ - O(n)
+
+T(n) = peta(n)
+
+Ostatnia faza zajmuje n porównan:
+
+T(n) = O(n + log(n));
+
+Pet(m) 
+f(n) = peta(gn)) - oznacza ze te 2 funkcje sa w tej samej klasie szybkosci,
+
+jesli istnieja c1, c2 i n0 wieksze od > 0 takie ze c1*f(n)<f(n)<g(n)
+
+dla wszystkich n>n0
+
+2n^3 - 7n - 100 = peta(n^3) 
+
+c1*n^2 < 2n^3 - 7m + 100 < c2*n^3
+
+dla c1 i c2 > 0
+n > n
+
+C2 = 2
+N0 = 14
+
+
+C1 = 1
+n= max(7,14)
+
+Dla m_sorta
+{T(1) = peta(1)
+{T(n) = 2T(n/2) + peta(n)
+
+T(n) = Peta(n*log2(n))
+
+Za³o¿enie: T(n) = pT(n/q)+peta(f(n))
+Dzieli problemy na q problemików.
+p wtedy rowna sie q^2
+
+Teza 1: T(n) = peta(f(n))
+gdy Isnieje f(n) = Teta(n^(logp+epsilon))
+
+T(n) = peta(n^(logP)*log(n)) gdy F(n) = peta((n^(log2*p)
+
+dla bisekcji:
+p = 1;
+q = 2;
+f(n) = 1
+
+T(n) = peta(n^0 * log(n))
+
+
+n = teta(n^1)
+
+
+
+Dziel i zwyciezaj - ma szybszy algorytm:
+1) dodwawanie macierz

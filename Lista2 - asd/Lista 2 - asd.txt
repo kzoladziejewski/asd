@@ -1,0 +1,33 @@
+Zad 1 - Lucas
+
+Robisz bisekcje na tablicy szukajac tego.
+
+Zad 2 - Nowak
+a) tyle ile elementow - 1
+b)
+int max_r(int t[], int n)
+ if(n == 1)
+	return t[0]	
+else
+	int temp = max_r(t,n-1);
+if (temp> t[n])
+return temp;
+else
+return t[n]
+
+c) int max_dir(int t[], int start, int stop)
+if(start==stop)
+return  t[start]
+int mid = (start+stop)/2;
+int a = max_dir(t, start, mid);
+int b = max_dir(t, mid+1; stop)
+return a > b ? a :b ;
+najmniej pamieci sie zuzywa
+
+Zad 3.
+
+a) n
+b) n
+c) n^2
+d) n^3
+e) n!

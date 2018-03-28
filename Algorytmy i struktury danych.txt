@@ -1,0 +1,226 @@
+Algorytm - sposób postêpowania który rozwi¹zuje problem
+
+Najgorszy algorytm to ten który siê zapêtli. Poprawny kiedyœ siê skoñczy
+Cechy algorytmu:
+Dla kazdych danych algorytm zatrzymuje siê
+Daje dobry wynik
+
+Zdolnoœæ czasowa - T
+T zale¿y od rozmiaru danych oraz ich typu
+1. Tœrednie - bierzemy wszystkie dane rozmiaru n i ich czasy i obliczamy srednie
+2. Tpesymistyczne - bierzemy skrajnie pesymistyczne dane
+3. Toptymistyczne - bierze sie skrajnie optymistyczne dane
+
+M - pamiêæ, te¿ zale¿y od danych
+Mœrednie
+Mpesymistyczne
+Moptymistyczne
+
+To samo.
+
+Czas mierzymy w operacjach elementarnych czyli np porównanie a i b, mnozenie
+
+Dotyczy tylko duzych N.
+
+Wszystkie czlony wielomianu dla duzych liczb, oprocz tego wiodace mozna pominac.
+np
+3n^2+7n+5
+i mozna olac 7n+5 oraz 3 i zostaje n^2
+
+Liniowy jest szybszy ni¿ kwadratowy
+
+T(n) = O(f(n))
+i wtedy tylko wtedy gdy
+Isntnieje taki N0 ¿e dla ka¿dego  n>n0 jest T(n) mniejszaod cf(n)
+
+3   3  V t(N) < CF(n)
+c>0 N0 n>n0
+
+np
+3n^2+8n+15 = O(n^2)
+f(n) = (n^2)
+
+3n^2+8n+15 < Cn^2 gdy C= 3+8+15
+
+
+c jest sta³¹ która zalezy od szybkosci komputera wiec moze byc byle jaka
+
+
+wa¿na jest klasa algorytmu
+NAJLEPSZA jest linia prosta, nie parabola
+fn(n)
+|n	|1	|10	|100	|10^6	|10^12
+-----------------------------------------------
+|n^2	|1	|100	|10^4	|10^12	|10^24
+-----------------------------------------------
+|log	|0	|4	|7	|20	|40	
+-----------------------------------------------
+|sqrt(n)|1	|4	|10	|100	|160
+-----------------------------------------------
+|n*logn |0	|40	|700	|2*10^7	|4*10^17
+
+
+
+ALGORYTM EUKLIDESA, ALGOYTM SITO KOGOS TAM NA E, 
+ALGORYTM wisekcja
+dzieli na pol zbior szukajac liczby np:
+1,2,3,4,5,6,7,8,9,10
+szukam 7
+biore srodkowa liczbe, jesli srodkowa jest mniejsza od 7 to odrzucam wszystko mniejsze
+i tak dalej
+
+
+Adresowanie bezpoœrednie - 
+zapisane do tablicy w okreslonym polu
+
+STRUKTURY DANYCH
+tablice - s¹ skoñczone, deklarujesz ilos miejsc i tyle jest zapisane
+listy jednolinkowana - wolniejszy dostêp, uzywam sturktury zê mam jedna osobê i wskaŸnik na nastêpn¹ osobê, mozna przegladac listy od poczatku
+listy 2 linkowana - mozna przelgadac od poczatku i od konca, jest jedna osoba i dwa wskazniki na poprzednia i nastepna osobe,
+drzewa - 
+
+Ad2.
+Stos - lifo - 
+1. mozna sprawdzic czy stos jest pusty, mozna wlozyc cos do stosu i cos zdjac,
+co to pierwsze weszlo na stos, wychodzi ostatnie,
+Kolejka - FIFO - pierwsze wesz³o, pierwsze wysz³o - ten kto pierwszy przyszedl ma pierwszy wyjsc
+s³ownik - Dict(value; key)
+
+
+class stos
+{
+private:
+int t[100];
+int n;
+public: 
+
+void put (int x)
+{
+t[y] = x;
+n++;
+
+int get()
+{
+n--;
+return t[n];
+}
+
+bool is_empty()
+{return n == 0;}
+
+
+
+
+
+LISTA 1:
+X*X = X^2
+X^2*X^2=X^4
+X^4*X^4=X^8
+
+x	|n
+3	|8
+3 = log(2)8
+
+Z rekurancja:
+int pow(int x,int y)
+{
+
+
+Przerób 
+int silnia(x)
+{
+if(x==1)
+return x;
+return silnia(x-1)*x;
+
+na liczaca zadanie 1:
+int cos(double x, int n)
+if n == 0
+return 1
+if (n == 1) 
+return x;
+if(n%2 == 0)
+double y = pow(x, n/2);
+return y;
+(obliczyc wartosc dla 7 i podnies do kwadratu)
+else
+...
+}
+
+Zad 2.
+funkcja musi byc taka ze f(a) * f(b) < 0
+double miejsce_zerowe(f,a,b)
+{
+}
+
+wskaznik na funkcje
+double f(a,b)
+{return sin(a)*cos(b)}
+
+double g(double x)
+{return 3x^2+7x+14;}
+POPRAWNIE
+double miejsce zerowe( double f(double), double a, double b)
+double fa = f(a)
+double fb = f(b)
+return x;
+}
+
+petla przerywa sie wtedy gdy srednia rowna sie jednej z wartosci, czyli c==a||b
+
+
+Zad 3.
+doube a[] = {3,5,8,0,0,7}
+double w ( double a[], int n, double x)
+
+(schemat hornera)
+x(a1+x(a2+x(a3+x(a4+x*a5))))+a0
+idziesz od srodka, od a4+x*a5
+
+Zadanie 4.
+b³¹d w wzorze
+Nie n nad k tylko n nad i
+
+n!
+---------
+i! * (n-i)! i mnoze to przez p^i*g^(n-i)
+
+mnozysz wartosc a1 przez a0 i n/k
+
+Zad 5.
+struct lnode
+{
+int key;
+lnode *next;
+lnode(int k0, int n0):key(k0s),next(n0=NULL) //konstruktor
+}
+
+tworzenie kolejnego:
+lnode *l = new lnode(5);
+lnode *l2 = new lnode(7,l); i wrzuci cos prze w lisie
+albo
+l - new lnode(7,l);
+lub
+l = new lnode(18,l)
+
+l (node* km x,y)
+{
+}
+ma odczytywac indeks i zwracac go w przypadku gdy nie ma wpisanej liczby ma dac 0
+
+void print(node* l)
+{
+if l==null)
+{return 0;}
+while(true)
+{
+cout << l->key;
+if (l->next==null)
+{
+cout << l->key;
+return 0;}
+
+l = l->next;
+return ;
+}
+
