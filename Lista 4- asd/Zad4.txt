@@ -1,0 +1,20 @@
+Tylko dla tych danych które ka¿da z nich jest unikalna i wyj¹tkowa np 
+Kube³kowo chcemy podzieliæ ludzi ze wzglêdu na ich imiona:
+
+Ich z³o¿onoœc wynosi:
+IloœæImion * IloœæUnikatowychDanych
+
+Inaczej pisz¹c:
+Z³o¿onoœæ algorytmu kube³kowego wynosi: n * k
+i na przyk³ad z³o¿onocœæ sortowania kube³kowego tego:
+
+Kacper, Kacper, Hania, Hania, Hania, Hania, Hania, Hania wynosi:
+
+8*2
+
+A takiego:
+Kacper, Karol, Krzysztof, Kazimierz, Hania, Henryk, Halina wynosi:
+7*7
+Czyli jeœli bym mia³:
+Kacper, Kacper, Kacper, Kacper, Kacper, Kacper 
+to mam tak naprawdê mam 7*1
