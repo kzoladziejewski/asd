@@ -15,6 +15,12 @@ Kacper, Kacper, Hania, Hania, Hania, Hania, Hania, Hania wynosi:
 A takiego:
 Kacper, Karol, Krzysztof, Kazimierz, Hania, Henryk, Halina wynosi:
 7*7
+
 Czyli jeœli bym mia³:
 Kacper, Kacper, Kacper, Kacper, Kacper, Kacper 
 to mam tak naprawdê mam 7*1
+
+
+PO ZAJECIACH:
+NA ODWRÓT!
+NIE UNIKALNE A TAKIE SAME!
